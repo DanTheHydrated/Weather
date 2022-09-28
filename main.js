@@ -1,3 +1,12 @@
+const container = document.getElementById("wrap");
+
+let btn = document.createElement("input");
+btn.setAttribute("type", "submit");
+btn.setAttribute("value", "Get Weather");
+
+
+
+
 
 let state = {
 // response: "",
