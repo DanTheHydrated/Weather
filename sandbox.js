@@ -55,27 +55,27 @@
 // var kTemp;
 // console.log(kTemp);
 
-let state = {
-    response: "",
-    city: "",
-    kTemp: "",
-    condition: "",
-    }
+// let state = {
+//     response: "",
+//     city: "",
+//     kTemp: "",
+//     condition: "",
+//     }
     
     
-    async function getData() {
-        const response= await axios.get('https://api.openweathermap.org/data/2.5/weather?zip=40475,us&appid=f2ba01b9d4760333e50d7a7790d49f76');
-    console.log(response.data)
-        updateState(response.data)
-        //return response
-        };
-        getData();
-       // getData()
-    function updateState(data) {
-        state.city = data.name;
-        state.kTemp = data.main.temp;
-        state.condition = data.weather[0].description;
-    }
+//     async function getData() {
+//         const response= await axios.get('https://api.openweathermap.org/data/2.5/weather?zip=40475,us&appid=f2ba01b9d4760333e50d7a7790d49f76');
+//     console.log(response.data)
+//         updateState(response.data)
+//         //return response
+//         };
+//         getData();
+//        // getData()
+//     function updateState(data) {
+//         state.city = data.name;
+//         state.kTemp = data.main.temp;
+//         state.condition = data.weather[0].description;
+    // }
     // response = getData();
     
     // let response = "";
@@ -92,4 +92,11 @@ let state = {
     // let condition = response.data.weather[0].description;
     
     
-    function math(state)
+    // function math(state)
+
+
+
+
+
+
+
