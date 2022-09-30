@@ -56,16 +56,16 @@ function updateState(data) {
     state.condition = data.weather[0].description;
     state.fTemp = Math.round(state.kTemp-273)*1.8+32;
     state.cTemp = Math.round(state.kTemp-273.15);
-    if (data.weather[0].main == "rain") {
+    if (data.weather[0].main === "Rain") {
         document.body.style.backgroundImage = "url(./images/Graining.gif)";
-    } else if (data.weather[0].main == "light rain") {
+    } else if (data.weather[0].main == "Misty") {
         document.body.style.backgroundImage = "url(./images/Graining.gif)";
-    } else if (data.weather[0].main == "clear") {
-        document.body.style.backgroundImage = "./images/clearSkys.gif";
-    } else if (data.weather[0].main == "clouds") {
-        document.body.style.backgroundImage = "./images/cloudy.gif";
+    } else if (data.weather[0].main == "Clear") {
+        document.body.style.backgroundImage = "url(./images/clearSkys.gif)";
+    } else if (data.weather[0].main == "Clouds") {
+        document.body.style.backgroundImage = "url(./images/cloudy.gif)";
     } else {
-        document.body.backgroundImage = "./images/idkBro.png";
+        document.body.style.backgroundImage = "url(./images/idkBro.gif)";
     };
     console.log(data.weather[0].main)
     console.log(state);
